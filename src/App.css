@@ -1,0 +1,476 @@
+#root {
+  max-width: 90%;
+}
+
+
+:root {
+  --primary-color: #28bf96;
+  --primary-color-dark: #209677;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.bg2{
+ 
+  display:flex;
+justify-content:center;
+align-items:center; 
+}
+.card{
+  overflow:hidden;
+}
+.bloodbg{
+display:grid;
+gap:20px;
+grid-template-areas:"bg1 bg2";
+}
+
+
+
+.orgcard{
+margin:40px 40px;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background-color:#f0ffff;
+gap:40px;  
+}
+.btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link  {
+  text-decoration: none;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: 0.3s;
+  border:none;
+  outline:none;
+}
+.dropdown-menu{
+ border:none;
+ background-color:whitesmoke;
+ padding:20px;
+
+
+ 
+}
+.link:hover {
+ color:red;
+}
+
+.header {
+  padding: 0 1rem;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.content h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+.btn1{
+  margin-left:10px;
+}
+.content h1 span {
+  font-weight: 400;
+}
+
+.content p {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  line-height: 1.75rem;
+}
+
+
+.image {
+  position: relative;
+  text-align: center;
+  isolation: isolate;
+}
+
+.image__bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 450px;
+  width: 450px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  z-index: -1;
+}
+.donorcd1{
+  font-weight : 800; 
+  letter-spacing:2px;
+
+
+}
+.donorcd2{
+  color:grey
+}
+.image img {
+  border-radius:50%;
+  height:450px;
+  width: 100%;
+  max-width: 475px;
+}
+
+.image__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image__content__1 {
+  transform: translate(calc(-50% - 12rem), calc(-50% - 8rem));
+}
+
+.image__content__1 span {
+  padding: 10px 12px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  background-color: #defcf4;
+  border-radius: 100%;
+}
+
+.image__content__1 h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.image__content__1 p {
+  color: var(--text-light);
+}
+
+.image__content__2 {
+  transform: translate(calc(-50% + 8rem), calc(-50% + 10rem));
+}
+
+.image__content__2 ul {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.image__content__2 li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: var(--text-light);
+}
+
+.image__content__2 span {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+@media (width < 900px) {
+  .nav__links {
+    display: none;
+  }
+
+  .header {
+    padding: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+}
+
+.donerreg{
+  display:flex;
+  height:100vh;
+  justify-content:center;
+  align-items:center;
+  color:black;
+  
+}
+.Centerbtns{
+  display:flex;
+  gap:10%;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+.Centerbtns>a:hover{
+  backdrop-filter: blur(20px);
+}
+.Centerbtns>a{
+  text-decoration:none;
+border:3px solid black;
+padding:8px;
+border-radius:10px;
+color:black;
+font-weight:900;
+font-size:30px;
+}
+.dropdown-menu > a:hover{
+  color:blue;
+}
+.dropdown-menu > a{
+  text-decoration:none;
+  color:black;
+
+
+}
+#basic-nav-dropdown{
+  
+}
+.navbar{
+  display:flex;
+  gap:14%;
+  background-color:transparent !important;
+}
+.navbar > a{
+  text-decoration:none;
+  color:white;
+  font-size:15px;
+}
+.navbar > a:hover{
+  color:blue;
+  font-weight:800;
+}
+
+
+/* Ensure proper scaling and width for mobile devices */
+html {
+  font-size: 14px; /* Base font size adjusted for smaller screens */
+}
+
+/* Set max-width for root container to ensure responsiveness */
+#root {
+  max-width: 90%; /* Adjusted max-width for smaller screens */
+}
+
+/* Reset box model */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Adjust font size and padding for smaller screens */
+.btn {
+  padding: 0.6rem 1rem; /* Adjusted padding for buttons */
+  font-size: 0.9rem; /* Adjusted font size for buttons */
+}
+
+/* Header styles */
+.header {
+  padding: 0.8rem; /* Adjusted padding for header */
+}
+
+/* Navigation links */
+.nav__links {
+  gap: 1.5rem; /* Adjusted gap between navigation links */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 900px) {
+  /* Adjust font size and padding for smaller screens */
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Adjust grid template for header on smaller screens */
+  .header {
+    padding: 0.8rem; /* Adjusted padding for header */
+  }
+}
+
+/* Donerreg styles */
+.donerreg {
+  height: 80vh; /* Adjusted height for smaller screens */
+}
+
+/* Centerbtns styles */
+.Centerbtns {
+  gap: 1rem; /* Adjusted gap between buttons */
+}
+
+/* Centerbtns button styles */
+.Centerbtns > a {
+  padding: 0.6rem 1rem; /* Adjusted padding for buttons */
+  font-size: 1rem; /* Adjusted font size for buttons */
+}
+
+/* Navbar styles */
+.navbar {
+  gap: 10px; /* Adjusted gap between navigation items */
+}
+
+/* Navbar link styles */
+.navbar > a {
+  font-size: 0.9rem; /* Adjusted font size for navigation links */
+}
+
+
+/* Adjust font size and padding for smaller screens */
+.btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* Header styles */
+.header {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Content styles */
+.content {
+  text-align: center;
+}
+
+/* Navigation links */
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 900px) {
+  /* Adjust grid template for header on smaller screens */
+  .header {
+    grid-template-columns: 1fr; /* Switch to single column layout */
+  }
+
+  /* Show navigation links for smaller screens */
+  .nav__links {
+    display: flex;
+  }
+}
+
+/* Donerreg styles */
+.donerreg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: black;
+}
+
+/* Centerbtns styles */
+.Centerbtns {
+  display: flex;
+  flex-direction: column; /* Align buttons vertically */
+  gap: 1rem; /* Add spacing between buttons */
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Adjust height to auto for responsiveness */
+}
+
+/* Centerbtns button styles */
+.Centerbtns > a {
+  text-decoration: none;
+  border: 3px solid black;
+  padding: 8px;
+  border-radius: 10px;
+  color: black;
+  font-weight: 900;
+  font-size: 1.2rem; /* Adjust font size for smaller screens */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /* Allow navigation items to wrap */
+  gap: 10px; /* Add spacing between navigation items */
+  justify-content: center; /* Center navigation items */
+  background-color: transparent !important;
+}
+
+/* Navbar link styles */
+.navbar > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem; /* Adjust font size for smaller screens */
+}
+
+/* Navbar link hover styles */
+.navbar > a:hover {
+  color: blue;
+  font-weight: 800;
+}
+
